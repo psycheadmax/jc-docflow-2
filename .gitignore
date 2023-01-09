@@ -158,6 +158,6 @@ sketch
 todo
 
 ## sqlite3 database ##
-db.sqlite3
+jcdb.sqlite3
 
 # End of https://www.toptal.com/developers/gitignore/api/node,react

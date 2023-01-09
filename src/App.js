@@ -14,6 +14,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import docGen from './docGen';
 import GeneralFace from './GeneralFace';
+import InsertClient from './jcdbClientsCrud'
 
 class App extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class App extends React.Component {
 
     this.changeFormHandler = this.changeFormHandler.bind(this)
     this.docGenerator = this.docGenerator.bind(this)
+    this.insertClient = this.insertClient.bind(this)
   }
 
   changeFormHandler(e) {
@@ -43,6 +45,10 @@ class App extends React.Component {
     docGen(this.state)
   }
 
+  insertClient() {
+    InsertClient()
+  }
+
   render() {
     return (
       <div className="App container">
@@ -55,6 +61,7 @@ class App extends React.Component {
           />
         <hr className="mb-4" />
         <button className="btn btn-primary btn-lg btn-block" type="submit" onClick={this.docGenerator} >OK</button>
+        {/* <button className="btn btn-primary btn-lg btn-block" type="submit" onClick={this.inserClient} >OK</button> */}
       </div>
     )
   }
