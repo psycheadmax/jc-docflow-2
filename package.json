@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "7.19.6",
+    "@babel/generator": "7.19.6",
+    "@babel/compat-data": "7.19.4",
+    "@babel/helper-compilation-targets": "7.19.3",
+    "@babel/helper-create-class-features-plugin":"7.19.0",
+    "@babel/helper-module-transforms":"7.19.6",
     "@electron/remote": "^2.0.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,6 +21,7 @@
     "electron": "^22.0.0",
     "file-saver": "^2.0.5",
     "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "sqlite3": "^5.1.4",
@@ -24,9 +31,9 @@
   "main": "public/main.js",
   "homepage": "./",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
     "electron:build": "",
@@ -49,5 +56,24 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "constants-browserify": "^1.0.0",
+    "crypto-browserify": "^3.12.0",
+    "fs": "^0.0.1-security",
+    "https-browserify": "^1.0.0",
+    "net": "^1.0.2",
+    "nock": "^13.2.9",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "timers-browserify": "^2.0.12",
+    "tls": "^0.0.1",
+    "url": "^0.11.0"
   }
 }

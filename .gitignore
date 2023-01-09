@@ -160,4 +160,7 @@ todo
 ## sqlite3 database ##
 jcdb.sqlite3
 
+## some sh**t ##
+---package-lock.json
+
 # End of https://www.toptal.com/developers/gitignore/api/node,react
