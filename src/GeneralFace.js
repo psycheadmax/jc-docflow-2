@@ -1,4 +1,3 @@
-
 function GeneralFace(props) {
     return (
         <div className="component">

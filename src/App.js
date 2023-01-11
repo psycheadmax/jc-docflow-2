@@ -1,13 +1,9 @@
-import './App.css';
-
 // import { useState, useMemo } from 'react'
 // import { FilesViewer } from './FilesViewer'
 
 // const fs = window.require('fs')
 // const pathModule = window.require('path')
 
-// import logo from './logo.svg';
-// import './App.css';
 // import logo from './logo.svg';
 // import './App.css';
 import React from 'react';
